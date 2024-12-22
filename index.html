@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Baddi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-t"></i>
+                    <div class="logo-text">Tarun Baddi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+              <!-- Hero section with Video -->
+              <div class="hero-pic">
+                <video autoplay muted loop>
+                    <!-- Ensure the path to the video is correct -->
+                    <source src="video\planet.mp4" type="video/mp4">
+                    <!-- Fallback message in case the video format is not supported -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+
+
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Tarun Baddi</h1>
+                    <p>
+                        Passionate about creating dynamic and visually appealing websites. Skilled in HTML, CSS, JavaScript, and modern frameworks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>KLE Technological University</h3>
+            <p>Bachelor of Computer Applications</p>
+            <p><strong>August 2022 – Present</strong><br> Hubli, Karnataka</p>
+        </div>
+        <div class="education-item">
+            <h3>P CJabin PU College of Science</h3>
+            <p>Pre-University Education</p>
+            <p><strong>2020 – 2022</strong><br> Hubli, Karnataka</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-item">
+            <h3>Languages:</h3>
+            <p>C, JavaScript, HTML/CSS, Java</p>
+        </div>
+        <div class="skills-item">
+            <h3>Developer Tools:</h3>
+            <p>VS Code, Git, GitHub</p>
+        </div>
+        <div class="skills-item">
+            <h3>Libraries/Frameworks:</h3>
+            <p>Tailwind CSS, Bootstrap, Express JS, Node JS</p>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-item">
+            <h3>International Conference on Computing, Communication, and Networking Technologies (ICCCNT)</h3>
+            <p>
+                Selected for the 15th International Conference on Computing, Communication, and Networking Technologies (ICCCNT) for presenting a research paper on "Quantum Inspired Firefly Algorithm: An Enhanced Approach to Traffic Signal Optimization." (IEEE Conference, IIT Mandi).
+                <br>
+                DOI: <a href="https://doi.org/10.1109/ICCCNT61001.2024.10726156" target="_blank">10.1109/ICCCNT61001.2024.10726156</a>
+            </p>
+        </div>
+        <div class="achievement-item">
+            <h3>Research Paper on Deep Learning Techniques for Image Segmentation</h3>
+            <p>
+                Research paper selected for the topic "A Comparative Analysis of U-Net, PSPNet, and FPNet: Deep Learning Techniques for Image Segmentation" at the ICEI24 IEEE Conference at IIIT Dharwad.
+            </p>
+        </div>
+    </section>
+
+    <!-- Typed.js for typing text effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        // Navbar toggle for small screens
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        // Typed.js for hero section
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
